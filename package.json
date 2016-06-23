@@ -1,6 +1,6 @@
 {
   "name": "eq_module_scafold",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is the scafolding module for the eqtribe modules",
   "main": "index.js",
   "sails": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vishnumishra/eq_module_scafold.git"
+    "url": "https://github.com/vishnumishra/eq_module_scafold.git"
   },
   "keywords": [
     "eqtribe",
