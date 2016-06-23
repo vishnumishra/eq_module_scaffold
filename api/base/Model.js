@@ -11,12 +11,15 @@ var getDbConnection = function() {
 
     if(env == 'test'){
         if(argv.indexOf('--local') > 0){
-            return 'LocationTestLocalServer'
+            /* Local test server */
+            return 'demoTestLocalServer'
         }else{
-            return 'LocationTestServer';   
+            /* Remote test server*/
+            return 'demoTestServer';   
         };
     }else{
-        return 'LocationServer';
+        /*Remort server*/
+        return 'demoServer';
     };
 };
 
@@ -29,7 +32,6 @@ module.exports = {
     // capitalize the given attributes value 
     capitalizeAttributeValues: function(obj, values, all, delimiter) {
         for (var key in obj) {
-            // console.log(values.indexOf(key), " key=> ", key, " values=> ", values);
             if (obj[key] === '' && (typeof obj[key] != 'boolean')) {
                 obj[key] = null;
             };

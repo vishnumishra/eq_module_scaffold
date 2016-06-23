@@ -18,5 +18,11 @@
     "eq"
   ],
   "author": "vishnu mishra <cybercognizant@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.0-rc.6",
+    "lodash": "^4.13.1",
+    "sails-build-dictionary": "^0.10.1",
+    "sails-util": "^0.11.0"
+  }
 }

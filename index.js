@@ -8,9 +8,9 @@ var _ = require('lodash'),
 module.exports = eq_module;
 
 function eq_module(sails) {
-    var npmModulesFolder = sails.config.appPath + '/node_modules/eq-sails-plugin-address'/*module name*/;
-    var controllerFolder = '/api/controllers';/*collection folder path*/
-    var modelFolder = '/api/models';/*model folder path*/
+    var npmModulesFolder = sails.config.appPath + '/node_modules/eq_module_scafold'/*module name*/;
+    var controllerFolderPath = '/api/controllers';/*collection folder path*/
+    var modelFolderPath = '/api/models';/*model folder path*/
     return {
         initialize: function(cb) {
             // Call to the eq_loadModules
@@ -26,7 +26,7 @@ function eq_module(sails) {
                  *
                  */
                     function loadModels(doneLoadModels) {
-                        var modelsFolder = npmModulesFolder + modelFolder;
+                        var modelsFolder = npmModulesFolder + modelFolderPath;
                         self.loadModels(modelsFolder, function(err, models) {
                             if (err) return doneLoadModels(err);
                             self.registerModels(models, doneLoadModels);
@@ -40,7 +40,7 @@ function eq_module(sails) {
                      */
                     function loadControllers(doneLoadControllers) {
 
-                        var controllerFolder = npmModulesFolder + controllerFolder;
+                        var controllerFolder = npmModulesFolder + controllerFolderPath;
                         self.loadControllers(controllerFolder, function(err, controllers) {
                             if (err) return doneLoadControllers(err);
                             self.registerControllers(controllers, doneLoadControllers);
