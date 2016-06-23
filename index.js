@@ -5,9 +5,9 @@ var _ = require('lodash'),
     async = require('async');
 
 
-module.exports = eq_address;
+module.exports = eq_module;
 
-function eq_address(sails) {
+function eq_module(sails) {
     var npmModulesFolder = sails.config.appPath + '/node_modules/eq-sails-plugin-address'/*module name*/;
     var controllerFolder = '/api/controllers';/*collection folder path*/
     var modelFolder = '/api/models';/*model folder path*/
