@@ -1,6 +1,6 @@
 {
   "name": "eq_module_scafold",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "This is the scafolding module for the eqtribe modules",
   "main": "index.js",
   "sails": {
