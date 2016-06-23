@@ -1,0 +1,22 @@
+{
+  "name": "eq_module_scafold",
+  "version": "0.0.1",
+  "description": "This is the scafolding module for the eqtribe modules",
+  "main": "index.js",
+  "sails": {
+    "isHook": true
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vishnumishra/eq_module_scafold.git"
+  },
+  "keywords": [
+    "eqtribe",
+    "eq"
+  ],
+  "author": "vishnu mishra <cybercognizant@gmail.com>",
+  "license": "ISC"
+}
