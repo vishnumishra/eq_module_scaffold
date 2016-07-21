@@ -12,14 +12,14 @@ var getDbConnection = function() {
     if(env == 'test'){
         if(argv.indexOf('--local') > 0){
             /* Local test server */
-            return 'demoTestLocalServer'
+            return 'mayaVendorLocalTestServer'
         }else{
             /* Remote test server*/
-            return 'demoTestServer';   
+            return 'mayaVendorServer';   
         };
     }else{
         /*Remort server*/
-        return 'demoServer';
+        return 'mayaVendorServer';
     };
 };
 

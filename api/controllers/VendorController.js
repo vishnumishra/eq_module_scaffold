@@ -11,28 +11,11 @@ var _ = require('lodash');
 var base = require('../base/Controller');
 module.exports = {
 
-    list: function(req, res) {
-        sails.models.city.find()
-            .sort('name ASC')
-            .then(function(cities) {
-                return [cities];
-            })
-            .spread(function(cities) {
-                var newData = cities.map(function(city) {
-                    return {
-                        city_code: city.code,
-                        city_name: city.name
-                    }
-                });
-                return res.json(newData);
-            })
-            .catch(function(err) {
-                sails.log.error(err.stack);
-                return res.serverError(err.message);
-            });
+    list: function(data, cb) {
+
     },
 
-    add: function(req, res) {
+    add: function(data, cb) {
 
         var err = base.check_req_params(req, ['code', 'name', 'state']);
         if (err) {
