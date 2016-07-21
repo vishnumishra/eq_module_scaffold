@@ -8,7 +8,7 @@ var _ = require('lodash'),
 module.exports = eq_module;
 
 function eq_module(sails) {
-    var npmModulesFolder = sails.config.appPath + '/node_modules/eq_module_scafold'/*module name*/;
+    var npmModulesFolder = sails.config.appPath + '/node_modules/maya_vendor'/*module name*/;
     var controllerFolderPath = '/api/controllers';/*collection folder path*/
     var modelFolderPath = '/api/models';/*model folder path*/
     return {

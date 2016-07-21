@@ -12,7 +12,7 @@ var base = require('../base/Controller');
 module.exports = {
 
     list: function(data, cb) {
-
+        
     },
 
     add: function(data, cb) {
